@@ -1,0 +1,8 @@
+package DesignPatterns.FactoryMethod_Pattern;
+public class WordDocumentFactory extends DocumentFactory {
+
+    @Override
+    public Document createDocument() {
+        return new WordDocument();
+    }
+}
