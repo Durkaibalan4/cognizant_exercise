@@ -1,0 +1,22 @@
+GIT HOL-5
+
+C:\Users\durka\Downloads\Git-HOL>git pull origin main
+From https://github.com/Durkaibalan4/Git-HOL
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\durka\Downloads\Git-HOL>git push origin main
+Everything up-to-date
+
+C:\Users\durka\Downloads\Git-HOL>git log --oneline --graph --decorate --all
+*   acdd46e (HEAD -> main, origin/main) Resolved merge conflict
+|\
+| * 336d08a Added hello.xml in GitWork
+* | d737647 Added hello.xml in Main
+|/
+| * fcc2c60 (origin/GitNewBranch, GitNewBranch) Added sample.txt
+|/
+* a907043 Added .gitignore
+* 5a67445 Initial Commit
+
+C:\Users\durka\Downloads\Git-HOL>

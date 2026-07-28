@@ -1,0 +1,48 @@
+GIT HOL - 3
+
+C:\Users\durka\Downloads\Git-HOL>git checkout -b GitNewBranch
+Switched to a new branch 'GitNewBranch'
+
+C:\Users\durka\Downloads\Git-HOL>
+C:\Users\durka\Downloads\Git-HOL>echo "Initial content for GitNewBranch" > sample.txt
+
+C:\Users\durka\Downloads\Git-HOL>
+C:\Users\durka\Downloads\Git-HOL>git add sample.txt
+
+C:\Users\durka\Downloads\Git-HOL>
+C:\Users\durka\Downloads\Git-HOL>git commit -m "Added sample.txt"
+[GitNewBranch fcc2c60] Added sample.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+C:\Users\durka\Downloads\Git-HOL>
+C:\Users\durka\Downloads\Git-HOL>git push -u origin GitNewBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 350 bytes | 175.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'GitNewBranch' on GitHub by visiting:
+remote:      https://github.com/Durkaibalan4/Git-HOL/pull/new/GitNewBranch
+remote:
+To https://github.com/Durkaibalan4/Git-HOL
+ * [new branch]      GitNewBranch -> GitNewBranch
+branch 'GitNewBranch' set up to track 'origin/GitNewBranch'.
+
+C:\Users\durka\Downloads\Git-HOL>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\durka\Downloads\Git-HOL>
+C:\Users\durka\Downloads\Git-HOL>git diff main..GitNewBranch
+diff --git a/sample.txt b/sample.txt
+new file mode 100644
+index 0000000..6195f5b
+--- /dev/null
++++ b/sample.txt
+@@ -0,0 +1 @@
++"Initial content for GitNewBranch"
+
+C:\Users\durka\Downloads\Git-HOL>
